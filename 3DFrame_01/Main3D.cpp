@@ -1,8 +1,6 @@
 #include "Main3D.h"
 #include "iostream"
 #include "windows.h"
-#include "gl/GL.h"
-#include "gl/GLU.h"
 #include "OpenGL.h"
 
 OpenGL* m_OpenGL;
