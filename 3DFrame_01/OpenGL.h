@@ -14,6 +14,9 @@
 #pragma once
 //#endif // _MSC_VER > 1000
 
+#pragma comment(lib,"winmm.lib")
+#pragma comment(lib,"opengl32.lib")
+#pragma comment(lib,"glu32.lib")
 class OpenGL
 {
 public:	OpenGL();
