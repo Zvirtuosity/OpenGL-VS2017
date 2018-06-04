@@ -157,11 +157,11 @@ void OpenGL::Play()
 
 	glPushMatrix();
 	glTranslatef(5, 0, -13);
-	glRotated(0, 1, 1, 1);
+	glRotated(r, 1, 1, 1);
 	glColor3f(1, 0, 1);
 	glBegin(GL_TRIANGLE_FAN);
 	glVertex3f(0, 0, 0);
-	for (int i=0; i <= 360; i+=30)
+	for (int i=0; i <= 390; i+=30)
 	{
 		float  p = i*3.14f / 180;
 		glVertex3f(sin(p), cos(p), 0);
