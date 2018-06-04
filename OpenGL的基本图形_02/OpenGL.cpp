@@ -1,6 +1,6 @@
 // OpenGL.cpp: implementation of the OpenGL class.
-// 程序设计：唐明理	2005.2  Edit by zhw in 2018年6月1日17时45分
-// E_mail cqtml@163.com
+// Edit by zhw in 2018年6月1日17时45分
+// E_mail and zhw:zvirtuosity@gmail.com
 #include "OpenGL.h"
 #include <math.h>
 float r;
