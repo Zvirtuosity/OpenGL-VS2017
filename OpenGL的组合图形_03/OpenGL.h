@@ -27,11 +27,17 @@ public:
 
 	HDC		hDC;			// GDI设备描述表
 	HGLRC	hRC;		    // 永久着色描述表
+
+	bool LoadT8(LPCWSTR fileName, GLuint & texture);
 	BOOL	SetupPixelFormat(HDC hDC);
 	void	init(int Width, int Height);
 	void	Render();
 	void    Play();
 	void    Plane(float x, float y, float z);
+	void    light0(float x, float y, float z, float a);
+	void    airplane(float x, float y, float z);
+	void    Box(float x, float y, float z);
+	void    picter(float x, float y, float z);
 	void	CleanUp();
 };
 

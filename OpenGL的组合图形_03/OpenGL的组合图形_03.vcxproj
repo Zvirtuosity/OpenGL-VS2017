@@ -149,6 +149,10 @@
     <ClCompile Include="Main3D.cpp" />
     <ClCompile Include="OpenGL.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="aa.bmp" />
+    <Image Include="bb.BMP" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
