@@ -19,7 +19,6 @@ OpenGL::OpenGL()
 	gTexture = gluNewQuadric();
 	LoadT8(L"aa.bmp", gPtextureId[0]);
 	LoadT8(L"bb.BMP", gPtextureId[1]);
-
 }
 OpenGL::~OpenGL()
 {
@@ -82,6 +81,9 @@ BOOL OpenGL::SetupPixelFormat(HDC hDC0)//ºÏ≤‚∞≤◊∞OpenGL
 	hRC = wglCreateContext(hDC);          //ªÒ»°‰÷»æ√Ë ˆæ‰±˙
 	wglMakeCurrent(hDC, hRC);             //º§ªÓ‰÷»æ√Ë ˆæ‰±˙
 	light0(0, 10, -20, 128);
+	gTexture = gluNewQuadric();
+	LoadT8(L"aa.bmp", gPtextureId[0]);
+	LoadT8(L"bb.BMP", gPtextureId[1]);
 	return TRUE;
 }
 void OpenGL::init(int Width, int Height)
