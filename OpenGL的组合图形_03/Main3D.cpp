@@ -82,7 +82,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 		cc, NULL };
 	RegisterClassEx(&wc);
 	m_OpenGL = new OpenGL();//
-	hWnd = CreateWindowEx(NULL, cc, L"学OpenGL编3D游戏 [ 2.OpenGL的组合图形 ] By zhw",
+	hWnd = CreateWindowEx(NULL, cc, L"学OpenGL编3D游戏 [ 3.OpenGL的组合图形 ] By zhw",
 		dwStyle | WS_CLIPCHILDREN | WS_CLIPSIBLINGS,
 		nX, nY, Width, Height,
 		NULL, NULL, hInstance, NULL);	// WinAPI 创建窗口
