@@ -352,7 +352,6 @@ void OpenGL::picter(float x, float y, float z)
 	auxSolidCone(.2, 1.5);
 	glPopMatrix();
 	glPopAttrib();
-	
 }
 
 void OpenGL::CleanUp()//Çå³ýOpenGL

@@ -27,9 +27,9 @@ public:
 
 	HDC		hDC;			// GDI设备描述表
 	HGLRC	hRC;		    // 永久着色描述表
-	double g_eye[3];
-	double g_look[3];
-	float rad_xz;
+	double g_eye[3]; // 摄像机所在位置(眼睛位置)
+	double g_look[3]; // 看向坐标, 也就是我们看向哪里?
+	float rad_xz; 
 	float g_angle;
 	float g_elev;
 	bool    LoadT8(LPCWSTR fileName, GLuint & texture);
