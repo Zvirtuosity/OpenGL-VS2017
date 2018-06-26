@@ -21,17 +21,21 @@
   - atomicMin 3.10才支持
   - atomicOr 3.10才支持
   - atomicXor 3.10才支持
-  - glAttachShader 附加一段shader程序到program object
-    被Linked到prgram object的Shader, 必须先被AttachShader.这意味着shader在Program将要执行的链接操作中被包含进来.
+  - glAttachShader  
+  附加一段shader程序到program object,被Linked到prgram object的Shader, 必须先被AttachShader.这意味着shader在Program将要执行的链接操作中被包含进来.
     所有合法的shader对象都被被运行起来, 无论是否被附加到program object, 才源码加载之前或者Shader再编译之前, 是可以Attached一段Shader object.
     不允许Attached同一类的Shader被附加多次.允许一个物体Attached超过一个Shader,当Shader被Attached到program时删除Shader,此时不会删除而是标记为删除,一直等到glDetachShader将Shader从detach才会删除
 > 3.10才支持的暂时不做了解, 因为多半用不到
   - barrier 3.10才支持
-  - glBeginQuery 作用:开始一次遮挡查询为每个所需的遮挡查询生成一个查询ID；1.调用glBeginQuery()，表示开始一个遮挡查询； 2.渲染需要进行遮挡查询的几何图形； 3.调用glEndQuery()，表示已经完成了遮挡查询； 4.提取通过了遮挡查询的样本数量。
+  - glBeginQuery   
+  作用:开始一次遮挡查询为每个所需的遮挡查询生成一个查询ID；1.调用glBeginQuery()，表示开始一个遮挡查询； 2.渲染需要进行遮挡查询的几何图形； 3.调用glEndQuery()，表示已经完成了遮挡查询； 4.提取通过了遮挡查询的样本数量。
 [查询帧缓冲区的用法](http://codercdy.com/2015/06/11/openglxue-xi-bi-ji-zheng-huan-chong-qu/),[镇缓冲区效果](https://blog.csdn.net/wangdingqiaoit/article/details/52423060):镜面，离屏渲染，以及很酷的后处理效果,块传输bilt是一个很重要的技术, 未完待续,官方解释没完全理解
-  - glBeginTransformFeedback
-  - glBindAttribLocation
-  - glBindBuffer
+  - glBeginTransformFeedback[查询使用场景](http://wiki.jikexueyuan.com/project/modern-opengl-tutorial/tutorial28.html)    
+  作用:粒子系统是为了模仿一些自然现象（比如烟，灰尘，烟火，雨等）,甚至是一些更高级的应用,这个可以自己了解和自行发挥.
+> DirectX10 介绍了一个新的特性叫 Stream Output，这个对于粒子系统的实现是非常有用的。OpenGL 在 3.0 版本之后也加入了这个特性——Transform Feedback，其实现思路是在 GS（如果没有使用 GS 则是 VS）处理之后，我们可以将变换之后的图元存放到一个特殊的缓存——Transform Feedback Buffer 中。此外，我们可以决定图元是否将继续按照以前的流程进行光栅化。在下一帧渲染的时候，上一帧中输出的顶点信息可以在这一帧中作为顶点缓存使用，在这样的一个循环过程中，我们可以不借助于应用程序来实现对粒子信息的更新。下面这幅图片介绍了 Transform Feedback Buffer 在管线中所处的位置。
+  - glBindAttribLocation   
+  用一个变量名称来关联一个基本顶点变量的索引GLuint.(GLuint program, GLuint index, const GLchar *name)
+  - glBindBuffer 
   - glBindBufferBase
   - glBindBufferRange
   - glBindFramebuffer
